@@ -10,12 +10,12 @@ app.set('view','ejs');
 
 app.get("/login",  (req, res) => {
 
-    return res.send('./view/login.ejs');
+    return res.render('/login');
   });
   
  app.post("/login",  (req, res) => {
   
-     return res.render('/view/login.ejs');
+     return res.render('/login');
   });
 
 
