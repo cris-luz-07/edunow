@@ -4,7 +4,7 @@ const routes = require('./routes/index');
 const  users = require('./routes/users');
 const app = express();
 
-app.use('/', routes);
+// app.use('/', routes);
 app.use('/users', users);
 
 // view engine setup
