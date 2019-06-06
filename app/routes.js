@@ -15,7 +15,7 @@ routes.get("/login",  (req, res) => {
 
 routes.post("/login",  (req, res) => {
 
-  return res.send('login');
+  res.render('login', {validacao: {}});
 });
 // const login = require("./models/Post");
 
