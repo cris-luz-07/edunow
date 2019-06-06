@@ -10,7 +10,7 @@ routes.get("/public/img/",  (req, res) => {
 
 routes.get("/login",  (req, res) => {
 
-  return res.send('login');
+  return res.send('/app/login.ejs');
 });
 
 routes.post("/login",  (req, res) => {
