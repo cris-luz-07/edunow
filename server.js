@@ -15,7 +15,7 @@ app.get("/login",  (req, res) => {
   
  app.post("/login",  (req, res) => {
   
-    return res.send('olq./app/login.ejs');
+    return res.send('./app/login.ejs');
   });
 
 
