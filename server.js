@@ -15,7 +15,7 @@ app.get("/login",  (req, res) => {
   
  app.post("/login",  (req, res) => {
   
-    return res.render('./app/login.ejs');
+    return res.render('./view/login');
   });
 
 
