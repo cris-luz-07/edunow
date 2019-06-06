@@ -10,12 +10,12 @@ routes.get("/public/img/",  (req, res) => {
 
 routes.get("/login",  (req, res) => {
 
-  return res.send('/app/login.ejs');
+  return res.send('./app/login.ejs');
 });
 
 routes.post("/login",  (req, res) => {
 
-  res.render('login', {validacao: {}});
+  return res.send('olq');
 });
 // const login = require("./models/Post");
 
