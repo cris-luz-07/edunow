@@ -18,7 +18,7 @@ app.set('view engine', 'ejs');
 
 app.get("/login",  (req, res) => {
 
-    return res.render('/login');
+    return res.render('views/login');
   });
   
  app.post("/login",  (req, res) => {
