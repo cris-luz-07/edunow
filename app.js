@@ -6,9 +6,14 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.engine('html',require('ejs').renderFile);
-app.set('view engine', 'ejs')
-app.set('views', path.join(__dirname, 'views'));
+// app.engine('html',require('ejs').renderFile);
+// app.set('view engine', 'ejs')
+// app.set('views', path.join(__dirname, 'views'));
+
+
+// views is directory for all template files
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
 
 
 app.get("/login",  (req, res) => {
